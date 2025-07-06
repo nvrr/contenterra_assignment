@@ -61,9 +61,9 @@ const CardUi = ({ title, selftextHtml, score,url }) => {
       <div>
         <h5 className="text-lg font-semibold mb-2 text-gray-800">{title}</h5>
        {decodedHtml ? <div
-          className="text-sm text-gray-600 mb-3"
+          className="h-64 text-sm text-gray-600 mb-3 scroll-mb-32  overflow-y-scroll no-scrollbar"
           dangerouslySetInnerHTML={{ __html: decodedHtml }}
-        /> : <div className="flex-1 flex items-center justify-center bg-red-400 text-white text-sm rounded p-4">No Content</div>}
+        /> : <div className=" h-64 flex-1 flex items-center justify-center  p-4">No Content</div>}
       </div>
       
       <div className="mt-auto">
