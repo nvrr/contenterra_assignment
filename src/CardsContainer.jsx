@@ -16,14 +16,14 @@ export function CardsContainer () {
       })
       .catch((err) => console.error("Failed to fetch Reddit posts:", err))
       .finally(
-        setLoading(false)
+        setTimeout(()=> setLoading(false),400)
       )
   }, []);
 
   if (loading) {
     return (
-      <div className="bg-yellow-50 w-screen h-screen flex items-center justify-center text-3xl text-blue-600">
-      please wait...
+      <div className="font-semibold bg-white w-full h-screen overflow-hidden flex items-center justify-center text-3xl text-blue-600">
+     <p className=""> please wait...</p>
       </div>
     );
   }
