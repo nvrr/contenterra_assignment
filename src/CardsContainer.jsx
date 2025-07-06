@@ -16,7 +16,7 @@ export function CardsContainer () {
       })
       .catch((err) => console.error("Failed to fetch Reddit posts:", err))
       .finally(
-        setTimeout(()=> setLoading(false),400)
+        setLoading(false)
       )
   }, []);
 
